@@ -1,0 +1,38 @@
+{
+  "mentor_gorusmeleri": [
+    {
+      "gorusme_tarihi": "2023-01-15",
+      "ad_soyad": "Ali Yilmaz",
+      "mentor": "Ahmet Bey",
+      "it_bilgisi": "Orta",
+      "yogunluk": "Dusuk",
+      "yorumlar": "Vit projesinin tamamina katilmasi uygun olur."
+    },
+    {
+      "gorusme_tarihi": "2023-02-03",
+      "ad_soyad": "Ayse Kaya",
+      "mentor": "Mehmet Han",
+      "it_bilgisi": "Yuksek",
+      "yogunluk": "Orta",
+      "yorumlar": "Diger."
+    },
+    {
+      "gorusme_tarihi": "2023-02-20",
+      "ad_soyad": "Fatma Demir",
+      "mentor": "Ahmet Bey",
+      "it_bilgisi": "Dusuk",
+      "yogunluk": "Yuksek",
+      "yorumlar": "Vit projesinin tamamina katilmasi uygun olur."
+    },
+    {
+      "gorusme_tarihi": "2023-03-10",
+      "ad_soyad": "Hasan Celik",
+      "mentor": "Mehmet Han",
+      "it_bilgisi": "Orta",
+      "yogunluk": "Yuksek",
+      "yorumlar": "Motivasyonu yüksek, derslere düzenli çalışıyor."
+    }
+  ]
+}
+
+

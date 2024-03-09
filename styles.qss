@@ -1,0 +1,66 @@
+#loginButton {
+    background-color: rgba(0, 255, 0, 50); /* Saydam yeşil */
+    border: none; /* Kenarlık yok */
+    color: black; /* Yazı rengi */
+    font-family: Zapfino; /* Yazı tipi: Rockwell */
+    font-size: 14px; /* Yazı boyutu */
+}
+
+#loginButton:hover {
+    background-color: rgba(0, 255, 0, 150); /* Tam yeşil */
+    color: white; /* Hover durumunda yazı rengi */
+}
+
+#closeButton {
+    background-color: rgba(255, 0, 0, 50); /* Saydam kırmızı */
+    border: none; /* Kenarlık yok */
+    color: black; /* Yazı rengi */
+    font-family: Zapfino; /* Yazı tipi: Rockwell */
+    font-size: 14px; /* Yazı boyutu */
+}
+
+#closeButton:hover {
+    background-color: rgba(255, 0, 0, 150); /* Tam kırmızı */
+    color: white; /* Hover durumunda yazı rengi */
+}
+
+#welcomeLabel {
+    border-width: 2px; /* Kenarlık genişliği */
+    border-style: solid; /* Kenarlık stili (solid, dashed, dotted, etc.) */
+    border-color: #000000; /* Kenarlık rengi (siyah) */
+    border-radius: 5px; /* Kenarlık yuvarlaklığı */
+    color: green; /* Yazı rengi */
+    font-family: Zapfino; /* Yazı tipi: Rockwell */
+    font-size: 16px; /* Yazı boyutu */
+}
+
+#Applicationsbuton:hover {
+    background-color: rgba(255, 255, 0, 50); /* */
+    color: black; /* Hover durumunda yazı rengi */
+}
+
+#Interviewsbuton:hover {
+    background-color: rgba(255, 255, 0, 50); /*  */
+    color: black; /* Hover durumunda yazı rengi */
+}
+
+#MentorMeetingbuton:hover {
+    background-color: rgba(255, 255, 0, 50); /*  */
+    color: black; /* Hover durumunda yazı rengi */
+}
+
+#closeButton2:hover {
+    background-color: rgba(205, 92, 92, 50); /* Tam kırmızı */
+    color: black; /* Hover durumunda yazı rengi */
+
+}
+
+#Adminbuton:hover {
+    background-color: rgba(255, 255, 0, 50); /*  */
+    color: black; /* Hover durumunda yazı rengi */
+}
+
+#selectionwindowbuton:hover {
+    background-color: rgba(255, 255, 0, 50); /*  */
+    color: black; /* Hover durumunda yazı rengi */
+}
