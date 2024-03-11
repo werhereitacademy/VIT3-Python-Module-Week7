@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>350</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>350</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">LOGIN</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>pictures/wehere_icon.png</normaloff>pictures/wehere_icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.499773, y1:1, x2:0.5, y2:0.00568182, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+One value - border-radius: 100px;</string>
+  </property>
+  <property name="animated">
+   <bool>false</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_log_login">
+    <property name="geometry">
+     <rect>
+      <x>86</x>
+      <y>200</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color : rgb(25, 200, 200);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 135, 135);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_log_exit">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>200</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color : rgb(25, 200, 200);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 135, 135);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_log_username">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>100</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+  border: 2px solid rgb(38, 38, 48);
+  border-radius: 15px;
+  color: #FFF;
+  padding-left: 15px;
+  background-color: rgb(36, 36, 36);
+ 
+}
+
+QLineEdit:hover {
+	border: 2px solid rgb(0, 255, 255);
+}
+
+ QLineEdit:focus  {
+  border: 2px solid rgb(35, 218, 233);
+  background-color: rgb(47, 47, 47);
+}
+
+   
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>username</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_log_password">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>140</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+  border: 2px solid rgb(38, 38, 48);
+  border-radius: 15px;
+  color: #FFF;
+  padding-left: 15px;
+  background-color: rgb(36, 36, 36);
+ 
+}
+
+QLineEdit:hover {
+	border: 2px solid rgb(0, 255, 255);
+}
+
+ QLineEdit:focus  {
+  border: 2px solid rgb(35, 218, 233);
+  background-color: rgb(47, 47, 47);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>password</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>251</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0,0%);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>pictures/wehere_logo.ico</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_forgot">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>250</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color: rgba(0, 0, 0,0%);
+    color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(107, 107, 107);
+}</string>
+    </property>
+    <property name="text">
+     <string>Forgot password.?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_log_fail">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>175</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0,0%);
+
+color: rgba(255, 0, 0, 0.5);
+border-radius : 15px;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>350</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

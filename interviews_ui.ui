@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>590</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>750</width>
+    <height>590</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>INTERVIEWS</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.499773, y1:1, x2:0.5, y2:0.00568182, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>201</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0,0%);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>pictures/interviews_menu.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>12</y>
+     <width>261</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0,0%);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>pictures/wehere_logo.ico</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>40</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>26</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0,0%);
+color: rgb(71, 84, 88);</string>
+   </property>
+   <property name="text">
+    <string>INTERVIEWS </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_inter_exit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>530</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color : rgb(25, 200, 200);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 135, 135);
+}</string>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_inter_preferences">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>460</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color : rgb(25, 200, 200);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 135, 135);
+}</string>
+   </property>
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_inter_sub_projects">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color : rgb(25, 200, 200);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 135, 135);
+}</string>
+   </property>
+   <property name="text">
+    <string>Submitted Projects</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_inter_username">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+  border: 2px solid rgb(38, 38, 48);
+  border-radius: 15px;
+  color: #FFF;
+  padding-left: 15px;
+  background-color: rgb(36, 36, 36);
+ 
+}
+
+QLineEdit:hover {
+	border: 2px solid rgb(0, 255, 255);
+}
+
+ QLineEdit:focus  {
+  border: 2px solid rgb(35, 218, 233);
+  background-color: rgb(47, 47, 47);
+}
+
+   
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>      Name or Surname</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>200</y>
+     <width>511</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0,0%);</string>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>170</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Name Surname</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Project 
+Submission Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Project 
+Arrival Date</string>
+    </property>
+    <property name="textAlignment">
+     <set>AlignHCenter|AlignTop</set>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="pushButton_inter_search">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>250</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color : rgb(25, 200, 200);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 135, 135);
+}</string>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>90</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>26</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0,0%);
+color: rgb(71, 84, 88);</string>
+   </property>
+   <property name="text">
+    <string>MENU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_inter_pro_arrivals">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>390</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color : rgb(25, 200, 200);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 135, 135);
+}</string>
+   </property>
+   <property name="text">
+    <string>Project Arrivals</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

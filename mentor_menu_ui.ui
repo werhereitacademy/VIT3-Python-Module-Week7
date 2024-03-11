@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>860</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>860</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MENTOR MENU</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>pictures/wehere_icon.png</normaloff>pictures/wehere_icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.499773, y1:1, x2:0.5, y2:0.00568182, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>211</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0,0%);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>pictures/mentor_menu.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>12</y>
+     <width>261</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0,0%);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>pictures/wehere_logo.ico</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>40</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>26</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0,0%);
+color: rgb(71, 84, 88);</string>
+   </property>
+   <property name="text">
+    <string>MENTOR MENU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_mentor_all_app">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>300</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color : rgb(25, 200, 200);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 135, 135);
+}</string>
+   </property>
+   <property name="text">
+    <string>All Applications</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_mentor_exit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>480</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color : rgb(25, 200, 200);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 135, 135);
+}</string>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_mentor_username">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>170</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+  border: 2px solid rgb(38, 38, 48);
+  border-radius: 15px;
+  color: #FFF;
+  padding-left: 15px;
+  background-color: rgb(36, 36, 36);
+ 
+}
+
+QLineEdit:hover {
+	border: 2px solid rgb(0, 255, 255);
+}
+
+ QLineEdit:focus  {
+  border: 2px solid rgb(35, 218, 233);
+  background-color: rgb(47, 47, 47);
+}
+
+   
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>      Name or Surname</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_mentor_preferences">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>390</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color : rgb(25, 200, 200);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 135, 135);
+}</string>
+   </property>
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_mentor_search">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border-radius : 15px;
+	background-color : rgb(25, 200, 200);
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	background-color: rgb(20, 135, 135);
+}</string>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_mentor">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>170</y>
+     <width>601</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0,0%);</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>Interview Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Name Surname</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Mentor</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>IT Knowledge</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nieuwe kolom</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Comments</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>110</y>
+     <width>361</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius : 15px;
+border: 3px solid rgb(85, 255, 255);
+background-color: rgba(0, 0, 0,0%);
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>    VIT Projesini Tamamina Katilmasi Uygundur.</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>    VIT Projesinin Ilk IT Egitimi Al... a Yonlendirimesi Uygundur.</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>    VIT Projesinin Ingilizce Egitim Al... a Yonlendirimesi Uygundur.</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>    VIT Projesi Kapsaminda Dir... Yonlendirilmesi Uygundur.</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>    Direk Bireysel Kocluk Ile Ise yonlendirilmesi Uygundur.</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>    Bir Sonra Vit Projesine Katilmasi Uygun Olur.</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>    Baska Bir Soktere Yonlendirmesi Uygun Olur.</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>    Diger</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
