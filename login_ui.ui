@@ -46,7 +46,7 @@ One value - border-radius: 100px;</string>
    <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_log_login">
+   <widget class="QPushButton" name="pushButton_login">
     <property name="geometry">
      <rect>
       <x>86</x>
@@ -76,7 +76,7 @@ QPushButton:hover{
      <string>Login</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_log_exit">
+   <widget class="QPushButton" name="pushButton_exit">
     <property name="geometry">
      <rect>
       <x>186</x>
@@ -100,7 +100,7 @@ QPushButton:hover{
      <string>Exit</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_log_username">
+   <widget class="QLineEdit" name="lineEdit_username">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -147,7 +147,7 @@ QLineEdit:hover {
      <string>username</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_log_password">
+   <widget class="QLineEdit" name="lineEdit_password">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -186,7 +186,7 @@ QLineEdit:hover {
      <string>password</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="label_logo">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -228,7 +228,7 @@ QPushButton:hover{
      <string>Forgot password.?</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_log_fail">
+   <widget class="QLabel" name="label_fail">
     <property name="geometry">
      <rect>
       <x>40</x>

@@ -20,22 +20,22 @@ class LoginPage(QMainWindow):
         super().__init__()
         self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WidgetAttribute.WA_TranslucentBackground)
-        self.loginform = Ui_MainWindow()
-        self.loginform.setupUi(self)
+        self.loginForm = Ui_MainWindow()
+        self.loginForm.setupUi(self)
         self.useradminwindow_open = UserAdminPreferencePage()
         self.userprewindow_open = UserPreferencePage()
 
         # Herhangi bir anda Enter tusuna basinca yetki kontrolu yapmak icin kodlar
-        self.loginform.lineEdit_log_password.returnPressed.connect(self.app_login)
-        self.loginform.lineEdit_log_password.returnPressed.connect(self.app_login)
+        self.loginForm.lineEdit_password.returnPressed.connect(self.app_login)
+        self.loginForm.lineEdit_password.returnPressed.connect(self.app_login)
 
         # 'pushButton_log_login' butonuna tiklandiginda yetki kontrolu yapmak icin kodlar
-        self.loginform.pushButton_log_login.clicked.connect(self.app_login)
-        self.loginform.pushButton_log_exit.clicked.connect(self.app_exit)
+        self.loginForm.pushButton_login.clicked.connect(self.app_login)
+        self.loginForm.pushButton_exit.clicked.connect(self.app_exit)
 
     def app_login(self):
-        username = self.loginform.lineEdit_log_username.text()
-        password = self.loginform.lineEdit_log_password.text()
+        username = self.loginForm.lineEdit_username.text()
+        password = self.loginForm.lineEdit_password.text()
         for user in users:
             if username == user[0] and password == user[1] and user[2] == 'admin':
                 self.close()
@@ -44,9 +44,9 @@ class LoginPage(QMainWindow):
                 self.close()
                 self.userprewindow_open.show()
             else:
-                self.loginform.label_log_fail.setText("\tYour email or password is incorrect.")
-                self.loginform.lineEdit_log_username.setText("")
-                self.loginform.lineEdit_log_password.setText("")
+                self.loginForm.label_fail.setText("\tYour email or password is incorrect.")
+                self.loginForm.lineEdit_username.setText("")
+                self.loginForm.lineEdit_password.setText("")
 
     def app_exit(self):
         self.close()

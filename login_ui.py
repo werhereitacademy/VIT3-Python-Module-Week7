@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'c:\Users\eigenaar\Desktop\Vit_3\7.Week\login.ui'
+# Form implementation generated from reading ui file 'login_ui.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.2
 #
@@ -19,7 +19,7 @@ class Ui_MainWindow(object):
         MainWindow.setFocusPolicy(QtCore.Qt.FocusPolicy.ClickFocus)
         MainWindow.setWindowTitle("LOGIN")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("c:\\Users\\eigenaar\\Desktop\\Vit_3\\7.Week\\pictures/wehere_icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("pictures/wehere_icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0.499773, y1:1, x2:0.5, y2:0.00568182, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "One value - border-radius: 100px;")
@@ -27,11 +27,11 @@ class Ui_MainWindow(object):
         MainWindow.setDocumentMode(False)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.pushButton_log_login = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_log_login.setGeometry(QtCore.QRect(86, 200, 91, 31))
-        self.pushButton_log_login.setMouseTracking(True)
-        self.pushButton_log_login.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
-        self.pushButton_log_login.setStyleSheet("QPushButton{\n"
+        self.pushButton_login = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.pushButton_login.setGeometry(QtCore.QRect(86, 200, 91, 31))
+        self.pushButton_login.setMouseTracking(True)
+        self.pushButton_login.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
+        self.pushButton_login.setStyleSheet("QPushButton{\n"
 "    border-radius : 15px;\n"
 "    background-color : rgb(25, 200, 200);\n"
 "    color: rgb(255, 255, 255);\n"
@@ -40,10 +40,10 @@ class Ui_MainWindow(object):
 "    background-color: rgb(20, 135, 135);\n"
 "}\n"
 "")
-        self.pushButton_log_login.setObjectName("pushButton_log_login")
-        self.pushButton_log_exit = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_log_exit.setGeometry(QtCore.QRect(186, 200, 91, 31))
-        self.pushButton_log_exit.setStyleSheet("QPushButton{\n"
+        self.pushButton_login.setObjectName("pushButton_login")
+        self.pushButton_exit = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.pushButton_exit.setGeometry(QtCore.QRect(186, 200, 91, 31))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
 "    border-radius : 15px;\n"
 "    background-color : rgb(25, 200, 200);\n"
 "    color: rgb(255, 255, 255);\n"
@@ -52,12 +52,12 @@ class Ui_MainWindow(object):
 "    background-color: rgb(20, 135, 135);\n"
 "}\n"
 "")
-        self.pushButton_log_exit.setObjectName("pushButton_log_exit")
-        self.lineEdit_log_username = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.lineEdit_log_username.setEnabled(True)
-        self.lineEdit_log_username.setGeometry(QtCore.QRect(80, 100, 191, 31))
-        self.lineEdit_log_username.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
-        self.lineEdit_log_username.setStyleSheet("QLineEdit {\n"
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.lineEdit_username = QtWidgets.QLineEdit(parent=self.centralwidget)
+        self.lineEdit_username.setEnabled(True)
+        self.lineEdit_username.setGeometry(QtCore.QRect(80, 100, 191, 31))
+        self.lineEdit_username.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
+        self.lineEdit_username.setStyleSheet("QLineEdit {\n"
 "  border: 2px solid rgb(38, 38, 48);\n"
 "  border-radius: 15px;\n"
 "  color: #FFF;\n"
@@ -80,11 +80,11 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "")
-        self.lineEdit_log_username.setText("")
-        self.lineEdit_log_username.setObjectName("lineEdit_log_username")
-        self.lineEdit_log_password = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.lineEdit_log_password.setGeometry(QtCore.QRect(80, 140, 191, 31))
-        self.lineEdit_log_password.setStyleSheet("QLineEdit {\n"
+        self.lineEdit_username.setText("")
+        self.lineEdit_username.setObjectName("lineEdit_username")
+        self.lineEdit_password = QtWidgets.QLineEdit(parent=self.centralwidget)
+        self.lineEdit_password.setGeometry(QtCore.QRect(80, 140, 191, 31))
+        self.lineEdit_password.setStyleSheet("QLineEdit {\n"
 "  border: 2px solid rgb(38, 38, 48);\n"
 "  border-radius: 15px;\n"
 "  color: #FFF;\n"
@@ -102,15 +102,15 @@ class Ui_MainWindow(object):
 "  background-color: rgb(47, 47, 47);\n"
 "}\n"
 "")
-        self.lineEdit_log_password.setText("")
-        self.lineEdit_log_password.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
-        self.lineEdit_log_password.setObjectName("lineEdit_log_password")
-        self.label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(40, 20, 251, 71))
-        self.label.setStyleSheet("background-color: rgba(0, 0, 0,0%);")
-        self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("c:\\Users\\eigenaar\\Desktop\\Vit_3\\7.Week\\pictures/wehere_logo.ico"))
-        self.label.setObjectName("label")
+        self.lineEdit_password.setText("")
+        self.lineEdit_password.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
+        self.lineEdit_password.setObjectName("lineEdit_password")
+        self.label_logo = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_logo.setGeometry(QtCore.QRect(40, 20, 251, 71))
+        self.label_logo.setStyleSheet("background-color: rgba(0, 0, 0,0%);")
+        self.label_logo.setText("")
+        self.label_logo.setPixmap(QtGui.QPixmap("pictures/wehere_logo.ico"))
+        self.label_logo.setObjectName("label_logo")
         self.pushButton_forgot = QtWidgets.QPushButton(parent=self.centralwidget)
         self.pushButton_forgot.setGeometry(QtCore.QRect(90, 250, 181, 31))
         self.pushButton_forgot.setStyleSheet("QPushButton{\n"
@@ -122,14 +122,14 @@ class Ui_MainWindow(object):
 "    background-color: rgb(107, 107, 107);\n"
 "}")
         self.pushButton_forgot.setObjectName("pushButton_forgot")
-        self.label_log_fail = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_log_fail.setGeometry(QtCore.QRect(40, 175, 261, 21))
-        self.label_log_fail.setStyleSheet("background-color: rgba(0, 0, 0,0%);\n"
+        self.label_fail = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_fail.setGeometry(QtCore.QRect(40, 175, 261, 21))
+        self.label_fail.setStyleSheet("background-color: rgba(0, 0, 0,0%);\n"
 "\n"
 "color: rgba(255, 0, 0, 0.5);\n"
 "border-radius : 15px;")
-        self.label_log_fail.setScaledContents(False)
-        self.label_log_fail.setObjectName("label_log_fail")
+        self.label_fail.setScaledContents(False)
+        self.label_fail.setObjectName("label_fail")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 350, 22))
@@ -144,9 +144,19 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        self.pushButton_log_login.setText(_translate("MainWindow", "Login"))
-        self.pushButton_log_exit.setText(_translate("MainWindow", "Exit"))
-        self.lineEdit_log_username.setPlaceholderText(_translate("MainWindow", "username"))
-        self.lineEdit_log_password.setPlaceholderText(_translate("MainWindow", "password"))
+        self.pushButton_login.setText(_translate("MainWindow", "Login"))
+        self.pushButton_exit.setText(_translate("MainWindow", "Exit"))
+        self.lineEdit_username.setPlaceholderText(_translate("MainWindow", "username"))
+        self.lineEdit_password.setPlaceholderText(_translate("MainWindow", "password"))
         self.pushButton_forgot.setText(_translate("MainWindow", "Forgot password.?"))
-        self.label_log_fail.setText(_translate("MainWindow", "<html><head/><body><p><br/></p></body></html>"))
+        self.label_fail.setText(_translate("MainWindow", "<html><head/><body><p><br/></p></body></html>"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec())
