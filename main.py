@@ -140,7 +140,7 @@ class BasvurularSayfasi(QMainWindow):
         self.oncekiVitKontrolButonu.clicked.connect(self.oncekiVitKontrol)
         self.mukerrerKayitButonu.clicked.connect(self.mukerrerKayit)
         self.basvuruFiltreliButonu.clicked.connect(self.basvuruFiltreli)
-        self.farkliKayitButonu.clicked.connect(self.farkliKaydet)
+        self.farkliKayitButonu.clicked.connect(self.farkliKayit)
         self.mentorGorusmesiTanimlananlarButonu.clicked.connect(self.MgTamamlanan)
         self.mentorGorusmesiTanimlanmayanlarButonu.clicked.connect(self.MgTamamlanmayan)
         self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)
@@ -215,9 +215,23 @@ class BasvurularSayfasi(QMainWindow):
         self.SonucGosterme()
     
     def basvuruFiltreli(self):
-        pass
+        # Kayıtları tutacak boş bir liste oluştur
+        unique_records = []
+        # Her kaydın benzersiz olup olmadığını kontrol etmek için bir set oluştur
+        seen = set()
+        for kayit in all_values3:
+            # Kayıt tuple'ını (isim, e-posta) kontrol et
+            record_tuple = (kayit[1], kayit[2])  # İsim ve e-posta adresini kullanarak bir tuple oluştur
+            if record_tuple not in seen:
+                seen.add(record_tuple)  # Görülen kayıtlara ekle
+                unique_records.append(kayit)  # Kaydı benzersiz kayıtlar listesine ekle
+
+        # DataFrame'i benzersiz kayıtlar ile oluştur
+        self.df = pd.DataFrame(unique_records)
+        self.SonucGosterme()  # Sonuçları gösterme fonksiyonunu çağır
+
     
-    def farkliKaydet(self):
+    def farkliKayit(self):
         results = []
 
         # Başvurular dosyasındaki adayları alın
